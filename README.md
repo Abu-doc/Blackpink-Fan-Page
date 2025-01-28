@@ -1,7 +1,7 @@
 BLACKPINK Fan Page 🎤✨
 Welcome to the BLACKPINK Fan Page! This project is a web-based fan page dedicated to the iconic K-pop group BLACKPINK. It includes a user-friendly login/register system and showcases detailed portfolios of all four members: Lisa, Jennie, Jisoo, and Rosé.
 
-👉[View Live Demo Of Site] - https://abu-doc.github.io/Blackpink-Fan-Page/ 👈
+👉[View Live Demo Of Site] -  👈
 
 Table of Contents
 Project Overview
