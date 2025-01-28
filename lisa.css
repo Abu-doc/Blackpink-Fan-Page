@@ -1,0 +1,227 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #000000, #ac045a, #000000);
+    color: #fff;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: rgba(0, 0, 0, 0.8);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.navbar img {
+    width: 220px;
+    height: auto;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.navbar ul li a:hover {
+    color: #ff1493;
+}
+
+/* Profile Container */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 120px 20px 40px; /* Adjusted for fixed navbar */
+    gap: 50px;
+    flex-wrap: wrap; /* Enable wrapping for smaller screens */
+}
+
+/* Profile Left */
+.profile-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Profile Right */
+.profile-right {
+    flex: 2;
+}
+
+.profile-right h1 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.bio {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-top: 40px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 16px;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+ul li strong {
+    color: #fff;
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid layout */
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.gallery-item {
+    width: 100%; /* Adjust based on grid */
+    height: auto; /* Maintain aspect ratio */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05); /* Subtle zoom effect on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    height: 50px;
+    padding-top: 15px;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 120px 10px 20px;
+    }
+
+    .profile-left, .profile-right {
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .profile-right h1 {
+        font-size: 28px;
+    }
+
+    .bio, ul li {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .gallery-item {
+        width: 100%; /* Adjust based on grid */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar img {
+        width: 160px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile-right h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .bio, ul li {
+        font-size: 12px;
+    }
+
+    .gallery-item {
+        width: 100%; /* Full width on small screens */
+    }
+}
